@@ -1,0 +1,347 @@
+body{
+   margin: 0 ;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+   background-color: #eaf4fd;
+   display: block;
+}
+
+/* HEADER SECTION */
+
+header{
+   left: 0;
+   top: 0;
+   right: 0;
+   z-index: 100;
+   box-shadow: 0 0.1rem 0.5rem #ccc;
+   transition: all 0.5s;
+   padding: 24px 10%;
+   position: fixed;
+   font-size: 14px;
+   display: block;
+   background-color: #eaf4fd
+}
+
+.header-content{
+   display: flex;
+   justify-content: space-between;
+   height: 20px;
+   align-items: center;
+   margin: auto;
+   max-width: 1290px;
+}
+
+.logo #menu-icon{
+   display: none;
+}
+
+.logo #logo{
+   max-width: 180px;
+}
+
+#mobilelinks{
+   display: none;
+}
+
+header ul{
+   display: flex;
+   align-items: center;
+}   
+header ul li{
+   list-style: none;
+   cursor: pointer;
+}
+
+header ul li a{
+   text-decoration: none;
+   padding: 0 18px;
+   color: black;
+}
+
+header ul li a:hover{
+   color:#1c2b4c;
+   cursor: pointer;
+   transition: 0.4s;
+   }
+         
+.Consulta-btn{
+   padding: 10px 16px;
+   background-color: #3499dd;
+   border: 0.5px solid rgb(255, 255, 255);
+   color: white;
+   cursor: pointer;
+   border-radius: 5px;
+}
+
+.Consulta-btn:hover{
+   background-color: #3359ac;
+   transition: 0.4s;
+}
+
+/* Menu responsivo */
+@media(max-width:820px){
+   .header-content{
+      display: flex;
+      flex-direction: column;
+      height: 20px;
+      justify-content: center;
+   }
+   #links{
+      display: none;
+      flex-direction: column;
+   }
+
+   #mobilelinks{
+      flex-direction: column;
+   }
+
+   #mobilelinks li{
+      padding: 20px;
+   }
+
+   #mobilelinks li a :hover{
+      background-color: #3359ac;
+      text-decoration: none;
+      padding: 18px 18px;
+
+   }
+
+   .logo{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .logo #menu-icon{
+      display: inline-block;
+   }
+}
+
+main{
+   /* margin-top: 160px; */
+   transition: all 0.5s;
+   padding: 100px 10%;
+
+}
+
+
+.main-section{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   font-size: 18px;
+   color: #1c2b4c;
+}
+
+.main-section h1{
+   line-height: 0.8;
+}
+
+.contacte{
+   display: block;
+   left: 0;
+   right: 0;
+   padding: 20px 10%;
+   background-color: #f6fafe;
+}
+
+.contacte-content{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+   max-width: 1290px;
+   flex-wrap: wrap;
+}
+
+.row{
+   flex: 1 300px;
+   display: flex;
+   align-items: center;
+   justify-content:left;
+   max-width: 320px;
+   margin: 20px;
+}
+
+.row img{
+   margin: 14px;
+}
+.row h4{
+   margin-bottom: -10px;
+}
+
+.row img{
+   max-width: 40px;
+}
+
+iframe{
+   width: 100%;
+}
+
+/* Botão de conversa no whatsap */
+.ws-icon-div{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: fixed;
+   right: 70px;
+   bottom: 70px;
+   cursor: pointer;
+}
+
+.ws-icon-div img{
+   width: 40px;
+   z-index: 9;
+   position: relative;
+}
+
+.ws-icon-div p{
+   position: absolute;
+   font-size: 15px;
+   width: 150px;
+   top: -60px;
+   text-align: center;
+   background-color: #53a4db;
+   border-radius: 3px;
+
+}
+
+/* Footer */
+footer{
+   transition: all 0.5s;
+   padding: 24px 10%;
+   display: block;
+   background-color:#eaf4fd;
+}
+
+.footer-content{
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 1290px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 3px solid #3359ac;
+}
+
+#row{
+   flex: 1 200px;
+   margin: 14px;
+   font-size: 14px;
+}
+
+.about{
+   display: flex;
+   align-items: start;
+   flex-direction: column;
+}
+
+.about img{
+   max-width: 140px;
+}
+
+.about p{
+   text-align: justify;
+}
+
+.social-media{
+   display: flex;
+   align-items: center;
+}
+
+.social-media img{
+   max-width: 25px;
+   margin-left: 5px;
+   cursor: pointer;
+}
+
+.fast-links p{
+   font-size: 14px;
+   cursor: pointer;}
+
+.fast-links a{
+   text-decoration: none;
+   color:#1c2b4c;
+}
+
+.fa{
+   color:#3359ac;
+   font-weight: 600;
+}
+
+.funcionamento p{
+   font-size: 14px;
+}
+
+.call a{
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+}
+
+.call{
+   padding: 12px 30px;
+   cursor: pointer;
+   border-radius: 5px;
+   background-color: #ffffff;
+   border: 1px solid rgb(0, 0, 0);
+   box-shadow: 0.5px 0.4px 0.3px 0.2px black;
+}
+
+#deleo-link{
+   font-size: 13px;
+}
+
+.copy{
+   text-align: center;
+   font-size: 14.5px;
+   margin: auto;
+   max-width: 1200px;
+   line-height: 2;
+  
+}
+
+.copy span{
+   color: #3359ac;
+   font-weight: 600;
+   
+   cursor: pointer;
+}
+
+.contacte-nos p span{
+   font-weight: 600;
+}
+
+@media(max-width: 1158px){
+   header{
+      padding: 24px 5%;
+   }
+
+   main{
+      padding: 80px 5%;
+   } 
+
+   footer{
+      padding: 24px 5%;
+   }   
+
+   #row{
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+   }
+
+   #menu-icon{
+      cursor: pointer;
+   }
+
+   .ws-icon-div{
+      right: 20px;
+      bottom: 40px;
+   }
+
+   
+}
